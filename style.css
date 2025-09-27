@@ -1,6 +1,6 @@
 html, body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: rgb(46, 1, 1);
+  background-color: rgb(5, 138, 161);
 }
 
 img {
@@ -9,12 +9,12 @@ img {
 }
 
 p {
-    color: #660000;
+    color: #0b395f;
     font-family: Arial, Helvetica, sans-serif;
   }
 
 h1, h2, h3 {
-    color: #660000;
+    color: #0b395f;
   }
 
 footer a:link,
@@ -48,5 +48,5 @@ a:active { color: darkred; }
 
 .highlight {
   background-color: #ffe4e1;
-  color: #8b0000;
+  color: #0b395f;
 }
