@@ -1,0 +1,52 @@
+html, body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: aliceblue;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+    color: #660000;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+h1, h2, h3 {
+    color: #660000;
+  }
+
+footer a:link,
+footer a:visited {
+  color: white;
+}
+
+footer a:hover,
+footer a:active {
+  color: yellow;
+}
+
+.nav-link:link,
+.nav-link:visited {
+  color: navy;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  color: orange;
+}
+
+a:link { color: maroon; }
+a:visited { color: dimgray; }
+a:hover { color: red; }
+a:active { color: darkred; }
+
+#bio{
+  color: #0b0c10; 
+}
+
+.highlight {
+  background-color: #ffe4e1;
+  color: #8b0000;
+}
