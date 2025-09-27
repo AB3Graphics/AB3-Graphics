@@ -1,6 +1,6 @@
 html, body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #4e3208;
+  background-color: #AA8C46;
 }
 
 img {
@@ -9,12 +9,12 @@ img {
 }
 
 p {
-    color: #AA8C46;
+    color: #a08d61;
     font-family: Arial, Helvetica, sans-serif;
   }
 
 h1, h2, h3 {
-    color: #AA8C46;
+    color: #a08d61;
   }
 
 footer a:link,
@@ -43,11 +43,11 @@ a:hover { color: red; }
 a:active { color: darkred; }
 
 #bio{
-  color: #AA8C46; 
+  color: #a08d61; 
 }
 
 .highlight {
   background-color: #291902;
-  color: #AA8C46
+  color: #a08d61
   ;
 }
