@@ -1,19 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
         <title>AB3 Graphics</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
-        <nav>
-            <a href="">Lab 1</a> |
-            <a href="">Lab 2</a> |
-            <a href="">Lab 3</a>
-        </nav>
-        <p>Hello.  This is my test page.</p>
-        <p>My name is Alexander Byrd, III.</p>  
-        <p>I am originally from New Orleans, Louisiana and currently work as a marketing graphic designer in Dallas, Texas; however, I am also an aspiring animator deeply influenced by anime and comics.</p>
-        <p> With a natural thirst for knowledge, I enjoy exploring new and interesting graphic design elements and visual storytelling mediums that shape my artistic perspective and the way I approach design.</p>  
-        <p>I am taking this class to broaden my abilities as a graphic designer by expanding my web design skills by learning programming languages and web techniques. My goal is to direct and produce my own animated series, so I am hoping to merge my graphic design, animation, and web design abilities to become a better designer and animator by solving problems with creative solutions and lateral thinking.</p>
+        <main>
+            <header>
+                <picture>
+                <source srcset="ab3-logo.png" type="image/png">
+                <img src="images/ab3-logo.png" alt="AB3 Graphics logo" width="200" height="200">
+                </picture>
+                <h1><strong>Alexander Byrd, III</strong></h1>
+                <p><strong>Graphic Designer</strong></p>
+                <nav>
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </nav>
+            </header>
+            <div id="bio">
+                <h2>Bio</h2>
+                <p>My name is Alexander Byrd, III.</p>  
+                <p>I am pursuing the long-term goal of producing and directing original animated series and films, drawing on my creative foundation to craft visual narratives that engage and inspire diverse audiences. This vision reflects not only my passion for storytelling but also my commitment to advancing into creative leadership roles within the animation and design industries.</p>
+                <p>Currently, I serve as a marketing graphic designer in Dallas, Texas, where I focus on delivering high-quality creative work that strengthens brand identity and supports business growth. My experience in campaign development, branding, and visual communication has allowed me to contribute strategically while honing the skills necessary to take on larger creative challenges.</p>  
+                <p>To prepare for these future responsibilities, I am dedicated to mastering a broad range of design and animation tools. I actively explore emerging software, programming languages, and web-based techniques to stay at the forefront of evolving technologies. This adaptability enables me to deliver innovative, efficient, and effective solutions in both design execution and broader creative strategy.</p>
+                <p>My approach goes beyond visual design alone. I emphasize creative problem-solving to improve workflows, streamline processes, and enhance collaboration within teams. By merging my skills in graphic design, animation, and web development, I strive to contribute not only as a designer but as a forward-thinking creative partner—someone who can align artistry with organizational goals while shaping engaging stories that connect across media.</p>
+                <p>Core belief: <span class="highlight">storytelling connects people</span> across mediums.</p>
+            </div>
+            <footer>
+                <nav>
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </nav>
+                <picture>
+                    <source srcset="ab3-logo.png" type="image/png">
+                    <img src="images/ab3-logo.png" alt="AB3 Graphics logo" width="200" height="200">
+                </picture>
+                <p>Please review my portfolio at<a href="https://www.ab3graphics.com/" target="_blank">AB3 Portfolio</a>.</p>
+            </footer>
+        </main>
+        <script>
+            alert("Welcome to AB3 Graphics!");
+            var guest = prompt("Welcome to AB3 Graphics!. Please enter your name then see the bottom of the screen.");
+            document.write("<h2>Welcome to AB3 Graphics, " + guest + "!</h2>");
+        </script>
     </body>
 </html>
