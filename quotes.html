@@ -28,10 +28,10 @@
         websites.push(favSite);
         websites.shift();
 
-          document.write("<h2>My Favorite Websites:</h2>");
-        document.write('<p><a href="#" onclick="window.open(\'' + websites[0] + '\')">' + websites[0] + "</a></p>");
-        document.write('<p><a href="#" onclick="window.open(\'' + websites[1] + '\')">' + websites[1] + "</a></p>");
-        document.write('<p><a href="#" onclick="window.open(\'' + websites[2] + '\')">' + websites[2] + "</a></p>");
+        document.write("<h2>My Favorite Websites:</h2>");
+        document.write('<a href="#" onclick="window.open('+ websites[0] +')">' + websites[0] + "</a>");
+        document.write('<a href="#" onclick="window.open('+ websites[1] +')">' + websites[1] + "</a>");
+        document.write('<a href="#" onclick="window.open('+ websites[2] +')">' + websites[2] + "</a>");
     </script>
 </body>
 </html>
