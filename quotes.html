@@ -6,7 +6,7 @@
     <body>
         <h1>Favorite Anime Quotes</h1>
         <script>
-         // Anime and Websites Quotes Page
+        // Anime and Websites Quotes Page
         var quotes = [
             "Do you know what heroes are? Say there is a chunk of meat. Pirates will have a banquet and eat it but heroes will share it with other people. I want all the meat. – Monkey D. Luffy",
             "I won't run away anymore.. I won't go back on my word… that is my ninja way! – Naruto Uzumaki",
@@ -24,8 +24,13 @@
             "https://www.anime.com/"
         ];
         var favSite = prompt("Enter your favorite website URL:");
+        document.write("<h2>Favorite Websites:</h2>");
         websites.push(favSite);
         websites.shift();
+        document.write("<h2>My Favorite Websites:</h2>");
+        document.write('<a href="'+websites[0]+'>'+ websites[0]+"</a>");
+        document.write('<a href="'+websites[1]+'>'+ websites[1]+"</a>");
+        document.write('<a href="'+websites[2]+'>'+ websites[2]+"</a>");
     </script>
 </body>
 </html>
