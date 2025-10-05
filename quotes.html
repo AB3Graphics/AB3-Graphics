@@ -27,8 +27,10 @@
         document.write("<h2>Favorite Websites:</h2>");
         websites.push(favSite);
         websites.shift();
-        for (var i = 0; i < websites.length; i++) {
-            document.write('<p><a href="' + websites[i] + '" target="_blank">' + websites[i] + "</a></p>");
-        }
+        document.write("<h2>My Favorite Websites:</h2>");
+        document.write('<p><a href="' + websites[0] + '>' + websites[0] + "</a></p>");
+        document.write('<p><a href="' + websites[1] + '>' + websites[1] + "</a></p>");
+        document.write('<p><a href="' + websites[2] + '>' + websites[2] + "</a></p>");
+    </script>
 </body>
 </html>
