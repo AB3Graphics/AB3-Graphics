@@ -6,7 +6,7 @@
     <body>
         <h1>Favorite Anime Quotes</h1>
         <script>
-        // Anime and Websites Quotes Page
+        // Anime Quotes 
         var quotes = [
             "Do you know what heroes are? Say there is a chunk of meat. Pirates will have a banquet and eat it but heroes will share it with other people. I want all the meat. – Monkey D. Luffy",
             "I won't run away anymore.. I won't go back on my word… that is my ninja way! – Naruto Uzumaki",
@@ -18,19 +18,29 @@
         var index = num % 5;
         document.write("<h2>Favorite Anime Quote:</h2>");
         document.write(quotes[index]);
-        var websites = [
-            "https://www.crunchyroll.com/",
-            "https://www.animenewsnetwork.com/",
-            "https://www.anime.com/"
-        ];
-        var favSite = prompt("Enter your favorite website URL:");
-        document.write("<h2>Favorite Websites:</h2>");
-        websites.push(favSite);
-        websites.shift();
-        document.write("<h2>My Favorite Websites:</h2>");
-        document.write('<p><a href="' + websites[0] + '>' + websites[0] + "</a></p>");
-        document.write('<p><a href="' + websites[1] + '>' + websites[1] + "</a></p>");
-        document.write('<p><a href="' + websites[2] + '>' + websites[2] + "</a></p>");
+      // --- Websites ---
+      var websites = [
+        "https://www.crunchyroll.com/",
+        "https://www.animenewsnetwork.com/",
+        "https://www.anime.com/"
+      ];
+
+      var favSite = prompt("Enter your favorite website URL (include https://):");
+      if (favSite && favSite.trim()) {
+        websites.push(favSite.trim());
+        websites.shift(); // remove first item to keep list length 3
+      }
+
+      document.write("<h2>My Favorite Websites:</h2>");
+      console.log("Websites array:", websites);
+
+      for (var i = 0; i < websites.length; i++) {
+        document.write(
+          '<p><a href="' + websites[i] + '" target="_blank" rel="noopener">' +
+          websites[i] +
+          "</a></p>"
+        );
+      }
     </script>
 </body>
 </html>
