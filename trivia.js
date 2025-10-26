@@ -117,7 +117,7 @@ function runTriviaQuiz() {
   return points;
 }
 
-document.addEventListener("DOMContentLoaded", function () {
+function main() {
   var name = prompt("What is your name?");
   name = capitalizeFirst(name || "friend");
   var greet = timeGreeting() + ", " + name + "!";
@@ -126,4 +126,4 @@ document.addEventListener("DOMContentLoaded", function () {
   validEmail();
   showRandomQuote();
   runTriviaQuiz();
-});
+}
