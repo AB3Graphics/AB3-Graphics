@@ -1,7 +1,5 @@
-// create a months array
 var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
 
-// create a tips array
 var tips = [
   "<p>Winter interest is real: pair Camellias with Hellebores for cold-season color.</p>",
   "<p>Spring renewal:<ul><li>Plant tomatoes by March 15.</li><li>Fertilize after warm-season grasses are actively growing.</li><li>Release beneficial nematodes for pest control.</li></ul>",
@@ -9,7 +7,6 @@ var tips = [
   "<p>Fall is prime planting in North Texas. Add petunias, dianthus, ornamental kale and mums; prep for winter pansies and violas.</p>"
 ];
 
-// create a specials array
 var specials = [
   "<p>Don't forget our feathered friends!</p><p>All bird feeders and birdseed are 50% off this January.</p>",
   "<p>Roses for your sweetheart!</p><p>All roses are $24.99 this February.</p>",
@@ -31,21 +28,16 @@ $(document).ready(function () {
   var monthName = months[monthNum];
   var year = today.getFullYear();
 
-  // December
   if (monthNum === 11) {
     $("#slogan").after("<h3>Happy Holidays!</h3>");
   }
 
-  // Month 
   $("#month").text("Tips for " + monthName);
 
-  // Copyright
   $("#copy").append(" " + year);
 
-  // Monthly Specials
   $("#specials").html("<h3>Specials</h3>" + specials[monthNum]);
 
-  // Determine season variables via switch on month number
   var season, bgImage, color, seasonIndex;
   switch (true) {
     case (monthNum === 11 || monthNum === 0 || monthNum === 1):
@@ -73,15 +65,11 @@ $(document).ready(function () {
       seasonIndex = 3;
   }
 
-  // Apply seasonal background image
   $("body").css("background-image", "url(" + bgImage + ")");
 
-  // Update tips html
   $("#seasontips").html(tips[seasonIndex]);
 
-  // Change heading/strong colors
   $("strong, h1, h2, h3").css("color", color);
 
-  // Add seasonal class to #specials
   $("#specials").addClass(season);
 });
