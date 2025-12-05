@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background: #000103;
+    color: #222;
+    padding: 0 10px 40px;
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+header {
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+nav {
+    background: #1f2933;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    color: #f9fafb;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 0.95rem;
+}
+
+nav a:hover,
+nav a:focus {
+    background: #3b82f6;
+}
+
+#about-box,
+.main-box {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px 24px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.main-box h1,
+#about-box h1 {
+    margin-bottom: 10px;
+}
+
+.main-box p,
+#about-box p {
+    margin-bottom: 12px;
+    color: #333;
+}
+
+h1, h2, h3 {
+    color: #111827;
+}
+
+h2 {
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+h3 {
+    margin-top: 15px;
+    margin-bottom: 6px;
+}
+
+ul, ol {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+li {
+    margin-bottom: 4px;
+}
+
+#skills {
+    margin-top: 15px;
+    padding: 12px 14px;
+    background: #f8fafc;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+}
+
+#skills ul {
+    margin-top: 5px;
+}
+
+button,
+.btn {
+    display: inline-block;
+    border: none;
+    background: #3b82f6;
+    color: #ffffff;
+    padding: 8px 14px;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    margin: 5px 4px 10px 0;
+}
+
+button:hover,
+.btn:hover {
+    background: #2563eb;
+}
+
+button:focus,
+.btn:focus {
+    outline: 2px solid #1d4ed8;
+    outline-offset: 2px;
+}
+
+a {
+    color: #2563eb;
+}
+
+.footer-link {
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 0.9rem;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #e5e7eb;
+    margin: 18px 0;
+}
+
